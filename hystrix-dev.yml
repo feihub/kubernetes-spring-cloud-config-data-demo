@@ -12,6 +12,12 @@ management:
       exposure:
         include: hystrix.stream
 
+turbine:
+  app-config: log,hystrix,gateway,business,config
+  aggregator:
+    cluster-config: default
+  combine-host-port: true
+
 logging:
   level:
     org.springframework.cloud: 'DEBUG'
