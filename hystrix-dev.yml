@@ -13,7 +13,7 @@ management:
         include: hystrix.stream
 
 turbine:
-  app-config: hystrix
+  app-config: hystrix,log,gateway,config,business
   aggregator:
     cluster-config: default
   cluster-name-expression: new String("default")
