@@ -17,6 +17,7 @@ turbine:
   aggregator:
     cluster-config: default
   combine-host-port: true
+  instanceUrlSuffix: hystrix.stream
 
 logging:
   level:
