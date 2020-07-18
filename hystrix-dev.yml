@@ -14,7 +14,6 @@ management:
 
 turbine:
   app-config: hystrix
-  instanceUrlSuffix: actuator/hystrix.stream
 
 logging:
   level:
