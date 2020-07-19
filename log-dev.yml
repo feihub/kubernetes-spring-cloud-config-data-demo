@@ -24,12 +24,6 @@ spring:
     sampler:
       probability: 1.0
 
-management:
-  metrics:
-    web:
-      server:
-        auto-time-requests: false
-
 logging:
   level:
     org.springframework.cloud: 'DEBUG'
