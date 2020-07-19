@@ -13,6 +13,10 @@ management:
       exposure:
         include: hystrix.stream
 
+spring:
+  zipkin:
+    baseUrl: http://log/
+
 logging:
   level:
     org.springframework.cloud: 'DEBUG'
