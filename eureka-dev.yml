@@ -7,6 +7,13 @@ eureka:
         registerWithEureka: false
         fetchRegistry: false
 
+spring:
+  zipkin:
+    baseUrl: http://log/
+  sleuth:
+    sampler:
+      probability: 1.0
+
 logging:
   level:
     org.springframework.cloud: 'DEBUG'
