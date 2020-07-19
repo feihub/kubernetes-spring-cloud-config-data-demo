@@ -16,6 +16,15 @@ management:
 spring:
   zipkin:
     baseUrl: http://log/
+  sleuth:
+    sampler:
+      probability: 1.0
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
 
 logging:
   level:
