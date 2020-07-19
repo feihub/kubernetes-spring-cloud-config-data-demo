@@ -19,6 +19,13 @@ turbine:
   cluster-name-expression: new String("default")
   combine-host-port: true
 
+spring:
+  zipkin:
+    baseUrl: http://log/
+  sleuth:
+    sampler:
+      probability: 1.0
+
 logging:
   level:
     org.springframework.cloud: 'DEBUG'
