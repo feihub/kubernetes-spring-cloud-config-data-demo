@@ -27,13 +27,13 @@ spring:
           predicates:
             - Path=/business/**
           filters:
-            - StripPrefix=-1
+            - StripPrefix=1
         - id: business2
           uri: lb://business2
           predicates:
             - Path=/business2/**
           filters:
-            - StripPrefix=-1
+            - StripPrefix=1
 
 business:
   ribbon:
