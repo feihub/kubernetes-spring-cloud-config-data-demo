@@ -22,14 +22,25 @@ spring:
     gateway:
       default-filters:
       routes:
-        - id: my_route
-          uri: lb://my-load-balanced-service
+        - id: business
+          uri: lb://business
           predicates:
-            - Path=/**
+            - Path=/business/**
+          filters:
+            - StripPrefix=1
+        - id: business2
+          uri: lb://business2
+          predicates:
+            - Path=/business2/**
+          filters:
+            - StripPrefix=1
 
-my-load-balanced-service:
+business:
   ribbon:
-    listOfServers: business, business2
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+
+business2:
+  ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
 
 logging:
