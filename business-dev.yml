@@ -19,6 +19,12 @@ spring:
     sampler:
       probability: 1.0
 
+stu-provide:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.BestAvailableRule
+    ReadTimeout: 5000
+    ConnectTimeout: 5000
+
 logging:
   level:
     org.springframework.cloud: 'DEBUG'
