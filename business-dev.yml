@@ -31,3 +31,9 @@ spring:
 logging:
   level:
     org.springframework.cloud: 'DEBUG'
+
+data:  
+  env: data-refresh-test
+  user:    
+    username: test    
+    password: 123456
