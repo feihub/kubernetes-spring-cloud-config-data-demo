@@ -28,12 +28,27 @@ spring:
             - Path=/business/**
           filters:
             - StripPrefix=1
+            - name: RequestRateLimiter
+              args:
+                key-resolver: '#{@hostAddrKeyResolver}'
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 3
         - id: business2
           uri: lb://business2
           predicates:
             - Path=/business2/**
           filters:
             - StripPrefix=1
+            - name: RequestRateLimiter
+              args:
+                key-resolver: '#{@hostAddrKeyResolver}'
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 3
+
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
 
   rabbitmq:
     host: localhost
