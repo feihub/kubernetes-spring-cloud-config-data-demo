@@ -11,7 +11,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: hystrix.stream
+        include: hystrix.stream,refresh
   metrics:
     web:
       server:
@@ -23,6 +23,11 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 logging:
   level:
