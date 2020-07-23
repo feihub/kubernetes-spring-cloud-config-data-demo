@@ -7,7 +7,7 @@ eureka:
       defaultZone: http://localhost:8084/eureka/
 
 turbine:
-  app-config: gateway,business,business2
+  app-config: gateway,oauth2,business,business2
   aggregator:
     cluster-config: default
   cluster-name-expression: new String("default")
