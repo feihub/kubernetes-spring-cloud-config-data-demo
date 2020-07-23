@@ -1,11 +1,6 @@
 server:
   port: 8016
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8084/eureka/
-
 management:
   endpoints:
     web:
