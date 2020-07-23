@@ -15,7 +15,7 @@ turbine:
 
 spring:
   zipkin:
-    baseUrl: http://log/
+    baseUrl: http://zipkin/
   sleuth:
     sampler:
       probability: 1.0
