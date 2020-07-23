@@ -66,4 +66,4 @@ business2:
 
 logging:
   level:
-    org.springframework.cloud: 'DEBUG'
+    org.springframework.cloud: DEBUG
