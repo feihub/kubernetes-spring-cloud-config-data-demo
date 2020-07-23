@@ -10,7 +10,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: hystrix.stream,refresh
+        include: "*"
 
 hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 5000
 
