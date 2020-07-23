@@ -12,6 +12,8 @@ management:
       exposure:
         include: hystrix.stream,refresh
 
+hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 5000
+
 spring:
   zipkin:
     baseUrl: http://zipkin/
@@ -44,6 +46,16 @@ spring:
                 key-resolver: '#{@hostAddrKeyResolver}'
                 redis-rate-limiter.replenishRate: 1
                 redis-rate-limiter.burstCapacity: 3
+        - id: hystrix
+          uri: lb://hystrix
+          predicates:
+            - Path=/hystrix/**
+          filters:
+            - StripPrefix=1
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
 
   redis:
     host: localhost
