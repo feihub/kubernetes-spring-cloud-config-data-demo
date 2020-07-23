@@ -1,11 +1,6 @@
 server:
   port: 8010
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8084/eureka/
-
 turbine:
   app-config: gateway,oauth2,business,business2
   aggregator:
