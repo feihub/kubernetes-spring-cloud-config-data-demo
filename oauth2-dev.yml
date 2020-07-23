@@ -5,6 +5,13 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8084/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream,refresh
+
 spring:
   zipkin:
     baseUrl: http://zipkin/
