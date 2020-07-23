@@ -6,14 +6,8 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8084/eureka/
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: hystrix.stream,refresh
-
 turbine:
-  app-config: hystrix,log,gateway,config,business
+  app-config: gateway,business,business2
   aggregator:
     cluster-config: default
   cluster-name-expression: new String("default")
@@ -25,13 +19,7 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-
 
 logging:
   level:
-    org.springframework.cloud: 'DEBUG'
+    org.springframework.cloud: DEBUG
