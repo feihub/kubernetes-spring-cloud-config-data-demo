@@ -68,6 +68,16 @@ spring:
     username: guest
     password: guest
 
+  security:
+    oauth2:
+      client:
+        userAuthorizationUri: http://localhost:8016/oauth/authorize
+        accessTokenUri: http://localhost:8016/oauth/access_token
+        clientAuthenticationScheme: form
+      resource:
+        userInfoUri: http://localhost:8016/user/info
+        preferTokenInfo: false
+
 business:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
