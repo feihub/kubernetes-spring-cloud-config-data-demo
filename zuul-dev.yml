@@ -10,8 +10,6 @@ management:
       exposure:
         include: "*"
 
-hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 5000
-
 spring:
   zipkin:
     baseUrl: http://zipkin/
@@ -35,14 +33,6 @@ zuul:
     username: guest
     password: guest
 
-
-business:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
-
-business2:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
 
 logging:
   level:
