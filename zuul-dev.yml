@@ -55,11 +55,6 @@ spring:
                 name: fallbackcmd
                 fallbackUri: forward:/fallback
 
-  redis:
-    host: localhost
-    port: 6379
-    database: 0
-
   rabbitmq:
     host: localhost
     port: 5672
