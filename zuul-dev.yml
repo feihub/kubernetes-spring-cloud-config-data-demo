@@ -18,13 +18,13 @@ spring:
       probability: 1.0
 
 zuul:
-      routes:
-        movie:
-          path: /business/**
-          serviceId: business
-        cartoon:
-          path: /business2/**
-          serviceId: business2
+  routes:
+    movie:
+      path: /business/**
+      serviceId: business
+    cartoon:
+      path: /business2/**
+      serviceId: business2
 
 
   rabbitmq:
