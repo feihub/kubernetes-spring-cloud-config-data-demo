@@ -18,42 +18,16 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
-  cloud:
-    gateway:
-      default-filters:
+
+zuul:
       routes:
-        - id: business
-          uri: lb://business
-          predicates:
-            - Path=/business/**
-          filters:
-            - StripPrefix=1
-            - name: RequestRateLimiter
-              args:
-                key-resolver: '#{@hostAddrKeyResolver}'
-                redis-rate-limiter.replenishRate: 1
-                redis-rate-limiter.burstCapacity: 3
-        - id: business2
-          uri: lb://business2
-          predicates:
-            - Path=/business2/**
-          filters:
-            - StripPrefix=1
-            - name: RequestRateLimiter
-              args:
-                key-resolver: '#{@hostAddrKeyResolver}'
-                redis-rate-limiter.replenishRate: 1
-                redis-rate-limiter.burstCapacity: 3
-        - id: hystrix
-          uri: lb://hystrix
-          predicates:
-            - Path=/hystrix/**
-          filters:
-            - StripPrefix=1
-            - name: Hystrix
-              args:
-                name: fallbackcmd
-                fallbackUri: forward:/fallback
+        movie:
+          path: /business/**
+          serviceId: business
+        cartoon:
+          path: /business2/**
+          serviceId: business2
+
 
   rabbitmq:
     host: localhost
