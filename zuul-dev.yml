@@ -3,7 +3,7 @@ server:
   servlet:
     session:
       cookie:
-        name: GATEWAY-OAUTH2-CLIENT-SESSIONID
+        name: ZUUL-OAUTH2-CLIENT-SESSIONID
 management:
   endpoints:
     web:
