@@ -29,13 +29,14 @@ spring:
 
 
 zuul:
-  sensitiveHeaders: Cookie,Set-Cookie,Authorization
   routes:
     business:
       path: /business/**
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
       serviceId: business
     business2:
       path: /business2/**
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
       serviceId: business2
   ratelimit:
     enabled: true
