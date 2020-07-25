@@ -2,7 +2,7 @@ server:
   port: 8010
 
 turbine:
-  app-config: gateway,oauth2,business,business2
+  app-config: zuul,oauth2,business,business2
   aggregator:
     cluster-config: default
   cluster-name-expression: new String("default")
