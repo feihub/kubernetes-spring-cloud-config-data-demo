@@ -19,10 +19,10 @@ spring:
 
 zuul:
   routes:
-    movie:
+    business:
       path: /business/**
       serviceId: business
-    cartoon:
+    business2:
       path: /business2/**
       serviceId: business2
 
