@@ -1,9 +1,9 @@
 server:
   port: 8086
   servlet:
-    session:
-      cookie:
-        name: ZUUL-OAUTH2-CLIENT-SESSIONID
+    session: never
+#       cookie:
+#         name: ZUUL-OAUTH2-CLIENT-SESSIONID
 management:
   endpoints:
     web:
