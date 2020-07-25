@@ -28,7 +28,7 @@ zuul:
       serviceId: business2
   ratelimit:
     enabled: true
-    repository: IN_MEMORY
+    repository: REDIS
     default-policy:
       limit: 3
       refresh-interval: 5
