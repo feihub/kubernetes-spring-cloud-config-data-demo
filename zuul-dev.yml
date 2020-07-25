@@ -18,6 +18,7 @@ spring:
       probability: 1.0
 
 zuul:
+  sensitiveHeaders: Cookie,Set-Cookie,Authorization
   routes:
     business:
       path: /business/**
