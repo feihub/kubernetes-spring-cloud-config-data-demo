@@ -34,6 +34,11 @@ zuul:
       refresh-interval: 5
       type: origin
 
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+
   rabbitmq:
     host: localhost
     port: 5672
