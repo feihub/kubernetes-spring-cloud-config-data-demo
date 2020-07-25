@@ -1,6 +1,7 @@
 server:
   port: 8016
-  servlet:
+
+#   servlet:
 #     session:
 #       cookie:
 #         name: OAUTH2-SERVER-SESSIONID
