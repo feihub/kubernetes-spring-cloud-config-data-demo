@@ -35,4 +35,4 @@ data:
   env: data-refresh-test
   user:    
     username: test    
-    password: 12345678
+    password: 123456
