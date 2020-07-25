@@ -1,10 +1,9 @@
 server:
   port: 8016
-
-#   servlet:
-#     session:
-#       cookie:
-#         name: OAUTH2-SERVER-SESSIONID
+  servlet:
+    session:
+      cookie:
+        name: OAUTH2-SERVER-SESSIONID
 
 management:
   endpoints:
