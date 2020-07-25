@@ -46,9 +46,6 @@ zuul:
       refresh-interval: 5
       type: origin
 
-ribbon:
-  eureka:
-    enabled: false
 
 logging:
   level:
