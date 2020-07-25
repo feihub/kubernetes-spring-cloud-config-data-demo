@@ -1,9 +1,9 @@
 server:
   port: 8088
-#   servlet:
-#     session:
-#       cookie:
-#         name: BUSINESS-OAUTH2-CLIENT-SESSIONID
+  servlet:
+    session:
+      cookie:
+        name: BUSINESS-OAUTH2-CLIENT-SESSIONID
 
 management:
   endpoints:
