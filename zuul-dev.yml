@@ -1,9 +1,10 @@
 server:
   port: 8086
-  servlet:
+#   servlet:
 #     session:
 #       cookie:
 #         name: ZUUL-OAUTH2-CLIENT-SESSIONID
+
 management:
   endpoints:
     web:
