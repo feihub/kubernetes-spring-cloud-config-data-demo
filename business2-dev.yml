@@ -1,6 +1,6 @@
 server:
   port: 8014
-  servlet:
+#   servlet:
 #     session:
 #       cookie:
 #         name: BUSINESS2-OAUTH2-CLIENT-SESSIONID
