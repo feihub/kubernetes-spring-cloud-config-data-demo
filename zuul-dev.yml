@@ -16,6 +16,17 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
 
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie,Authorization
@@ -33,17 +44,6 @@ zuul:
       limit: 3
       refresh-interval: 5
       type: origin
-
-  redis:
-    host: localhost
-    port: 6379
-    database: 0
-
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
 
 
 logging:
