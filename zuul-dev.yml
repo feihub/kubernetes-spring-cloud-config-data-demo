@@ -26,7 +26,12 @@ zuul:
     business2:
       path: /business2/**
       serviceId: business2
-
+  ratelimit:
+    enabled: true
+    default-policy:
+      limit: 3
+      refresh-interval: 5
+      type: origin
 
   rabbitmq:
     host: localhost
