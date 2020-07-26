@@ -3,7 +3,7 @@ server:
   servlet:
     session:
       cookie:
-        name: BUSINESS2-OAUTH2-CLIENT-SESSIONID
+        name: OAUTH2-CLIENT-SESSIONID
 
 
 management:
