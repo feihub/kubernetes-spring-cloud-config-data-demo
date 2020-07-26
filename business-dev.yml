@@ -21,6 +21,10 @@ spring:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.BestAvailableRule
     ReadTimeout: 5000
     ConnectTimeout: 5000
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
   rabbitmq:
     host: localhost
     port: 5672
