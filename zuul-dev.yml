@@ -33,11 +33,11 @@ zuul:
   routes:
     business:
       path: /business/**
-      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      sensitiveHeaders:
       serviceId: business
     business2:
       path: /business2/**
-      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      sensitiveHeaders:
       serviceId: business2
   ratelimit:
     enabled: true
