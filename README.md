@@ -1,1 +1,1 @@
-# Configdata for Spring Cloud Demo
+# Config Data For Spring Cloud Demo
