@@ -19,22 +19,22 @@ spring:
     sampler:
       probability: 1.0
   redis:
-    host: localhost
+    host: redis
     port: 6379
     database: 0
   rabbitmq:
-    host: localhost
+    host: rabbitmq
     port: 5672
     username: guest
     password: guest
   security:
     oauth2:
       client:
-        userAuthorizationUri: http://localhost:8016/oauth/authorize
-        accessTokenUri: http://localhost:8016/oauth/access_token
+        userAuthorizationUri: http://oauth2:8016/oauth/authorize
+        accessTokenUri: http://oauth2:8016/oauth/access_token
         clientAuthenticationScheme: form
       resource:
-        userInfoUri: http://localhost:8016/user/info
+        userInfoUri: http://oauth2:8016/user/info
         preferTokenInfo: false
 
 logging:
