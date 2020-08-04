@@ -22,11 +22,11 @@ spring:
     ReadTimeout: 5000
     ConnectTimeout: 5000
   redis:
-    host: localhost
+    host: redis
     port: 6379
     database: 0
   rabbitmq:
-    host: localhost
+    host: rabbitmq
     port: 5672
     username: guest
     password: guest
