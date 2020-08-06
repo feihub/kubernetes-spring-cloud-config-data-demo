@@ -43,7 +43,7 @@ zuul:
     enabled: true
     repository: REDIS
     default-policy:
-      limit: 3
+      limit: 30
       refresh-interval: 5
       type: origin
 
