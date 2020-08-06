@@ -14,7 +14,7 @@ management:
 
 spring:
   zipkin:
-    baseUrl: http://zipkin/
+    baseUrl: http://zipkin:8012/
   sleuth:
     sampler:
       probability: 1.0
