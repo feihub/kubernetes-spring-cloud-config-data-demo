@@ -1,1 +1,1 @@
-# Spring Cloud Demo3 Config Data
+# Kubernetes Spring Cloud Demo Config Data
