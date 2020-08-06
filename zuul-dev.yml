@@ -34,11 +34,11 @@ zuul:
     business:
       path: /business/**
       sensitiveHeaders:
-      url: http://localhost:9001/
+      url: http://business:8088/
     business2:
       path: /business2/**
       sensitiveHeaders:
-      url: http://localhost:9001/
+      url: http://business2:8014/
   ratelimit:
     enabled: true
     repository: REDIS
