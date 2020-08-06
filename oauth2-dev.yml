@@ -4,6 +4,7 @@ server:
     session:
       cookie:
         name: OAUTH2-SERVER-SESSIONID
+        domain: .test.spring
 
 management:
   endpoints:
