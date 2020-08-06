@@ -30,11 +30,11 @@ spring:
   security:
     oauth2:
       client:
-        userAuthorizationUri: http://oauth2:8016/oauth/authorize
-        accessTokenUri: http://oauth2:8016/oauth/access_token
+        userAuthorizationUri: http://oauth2:32080/oauth/authorize
+        accessTokenUri: http://oauth2:32080/oauth/access_token
         clientAuthenticationScheme: form
       resource:
-        userInfoUri: http://oauth2:8016/user/info
+        userInfoUri: http://oauth2:32080/user/info
         preferTokenInfo: false
 
 logging:
