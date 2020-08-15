@@ -2,10 +2,12 @@ server:
   port: 8010
 
 turbine:
-  app-config: zuul,oauth2,business,business2
   aggregator:
     cluster-config: default
   cluster-name-expression: new String("default")
+  ConfigPropertyBasedDiscovery: 
+    default: 
+      instances: http://zuul,http://oauth2,http://business,http://business2
   combine-host-port: true
 
 spring:
