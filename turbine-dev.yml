@@ -1,6 +1,9 @@
 server:
   port: 8010
 
+InstanceDiscovery:
+  impl: com.netflix.turbine.discovery.ConfigPropertyBasedDiscovery
+
 turbine:
   aggregator:
     cluster-config: default
