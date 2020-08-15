@@ -11,10 +11,11 @@ turbine:
     default: 
       instances: zuul,oauth2,business,business2
   instanceUrlSuffix:
-      zuul: :8086/actuator/hystrix.stream
-      oauth2: :8016/actuator/hystrix.stream
-      business: :8088/actuator/hystrix.stream
-      business2: :8014/actuator/hystrix.stream
+      default:
+        zuul: :8086/actuator/hystrix.stream
+        oauth2: :8016/actuator/hystrix.stream
+        business: :8088/actuator/hystrix.stream
+        business2: :8014/actuator/hystrix.stream
 
 spring:
   zipkin:
