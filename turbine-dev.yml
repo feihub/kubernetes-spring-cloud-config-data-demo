@@ -12,11 +12,8 @@ turbine:
       instances: zuul,oauth2,business,business2
   instanceUrlSuffix:
       zuul: :8086/actuator/hystrix.stream
-  instanceUrlSuffix:
       oauth2: :8016/actuator/hystrix.stream
-  instanceUrlSuffix:
       business: :8088/actuator/hystrix.stream
-  instanceUrlSuffix:
       business2: :8014/actuator/hystrix.stream
 
 spring:
