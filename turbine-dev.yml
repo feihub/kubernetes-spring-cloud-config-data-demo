@@ -7,11 +7,10 @@ InstanceDiscovery:
 turbine:
   aggregator:
     cluster-config: default
-  cluster-name-expression: new String("default")
   ConfigPropertyBasedDiscovery: 
     default: 
-      instances: http://zuul,http://oauth2,http://business,http://business2
-  combine-host-port: true
+      instances: http://zuul
+  instanceUrlSuffix: :8086/actuator/hystrix.stream
   
 spring:
   zipkin:
