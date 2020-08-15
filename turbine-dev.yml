@@ -9,7 +9,7 @@ turbine:
     cluster-config: default
   ConfigPropertyBasedDiscovery: 
     default: 
-      instances: http://zuul
+      instances: zuul
   instanceUrlSuffix: :8086/actuator/hystrix.stream
   
 spring:
