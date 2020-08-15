@@ -6,7 +6,7 @@ InstanceDiscovery:
 
 turbine:
   aggregator:
-    cluster-config: zuul,oauth2,business,business2
+    clusterConfig: zuul,oauth2,business,business2
   ConfigPropertyBasedDiscovery: 
     zuul: 
       instances: zuul
