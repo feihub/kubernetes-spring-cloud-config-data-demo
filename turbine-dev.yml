@@ -12,8 +12,7 @@ turbine:
     default: 
       instances: http://zuul,http://oauth2,http://business,http://business2
   combine-host-port: true
-    eureka:
-      enabled: false
+  
 spring:
   zipkin:
     baseUrl: http://zipkin:8012/
