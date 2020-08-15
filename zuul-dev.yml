@@ -15,7 +15,6 @@ management:
 spring:
   zipkin:
     baseUrl: http://zipkin:8012/
-    discoveryClientEnabled: false
   sleuth:
     sampler:
       probability: 1.0
