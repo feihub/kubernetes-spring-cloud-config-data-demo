@@ -22,6 +22,8 @@ spring:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.BestAvailableRule
     ReadTimeout: 5000
     ConnectTimeout: 5000
+    eureka:
+      enabled: false
   redis:
     host: redis
     port: 6379
@@ -31,6 +33,10 @@ spring:
     port: 5672
     username: guest
     password: guest
+
+business2:
+  ribbon:
+    listOfServers: http://business2:8014
 
 logging:
   level:
