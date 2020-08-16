@@ -4,26 +4,6 @@ server:
 InstanceDiscovery:
   impl: com.netflix.turbine.discovery.ConfigPropertyBasedDiscovery
 
-# turbine:
-#   aggregator:
-#     clusterConfig: zuul
-#     clusterConfig: zuul,oauth2,business,business2
-#   ConfigPropertyBasedDiscovery: 
-#     zuul: 
-#       instances: zuul
-#     oauth2: 
-#       instances: oauth2
-#     business: 
-#       instances: business
-#     business2: 
-#       instances: business2
-
-#   instanceUrlSuffix:
-#       zuul: :8086/actuator/hystrix.stream
-#       oauth2: :8016/actuator/hystrix.stream
-#       business: :8088/actuator/hystrix.stream
-#       business2: :8014/actuator/hystrix.stream
-
 turbine:
   aggregator:
     cluster-config: default
@@ -32,13 +12,6 @@ turbine:
       instances: zuul:8086,oauth2:8016,business:8088,business2:8014
   instanceUrlSuffix:
     default: /actuator/hystrix.stream
-
-#   instanceUrlSuffix:
-#     default: 
-#       zuul: :8086/actuator/hystrix.stream
-#       oauth2: :8016/actuator/hystrix.stream
-#       business: :8088/actuator/hystrix.stream
-#       business2: :8014/actuator/hystrix.stream
 
 spring:
   zipkin:
