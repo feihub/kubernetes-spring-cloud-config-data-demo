@@ -29,9 +29,9 @@ turbine:
     cluster-config: default
   ConfigPropertyBasedDiscovery: 
     default: 
-      instances: zuul,oauth2,business,business2
+      instances: zuul:8086,oauth2:8016,business:8088,business2:8014
   instanceUrlSuffix:
-    default: :8086/actuator/hystrix.stream
+    default: /actuator/hystrix.stream
 
 #   instanceUrlSuffix:
 #     default: 
